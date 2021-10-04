@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="372.692" Width="458.462" Activated="Window_Loaded">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="119*"/>
+            <ColumnDefinition Width="106*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="testInput" HorizontalAlignment="Left" Height="28" Margin="12,12,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.304,-0.334"/>
+        <TextBlock x:Name="formattedText" HorizontalAlignment="Left" Margin="14,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="238" Width="384" Grid.ColumnSpan="2"/>
+        <Button x:Name="testButton" Content="Format Data" HorizontalAlignment="Left" Margin="82.304,17,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.482,0.412" Height="23" Click="testButton_Click" Grid.Column="1"/>
+
+    </Grid>
+</Window>
