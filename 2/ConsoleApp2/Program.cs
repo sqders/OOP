@@ -36,6 +36,7 @@ namespace ConsoleApp2
                 //Также любой базовый тип можно неявно преобразовать в ссылочный
                 byte byte_var = 0;
                 {
+                    char char_byte = byte_var;
                     short short_byte = byte_var;
                     ushort ushort_byte = byte_var;
                     int int_byte = byte_var;

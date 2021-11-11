@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDC", "GDC.csproj", "{9046DE00-EA58-4E4E-9354-BA5D028D8285}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDC.Tests", "..\GDC.Tests\GDC.Tests.csproj", "{CF313151-C034-4CE6-B3B6-5190C5C55379}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9046DE00-EA58-4E4E-9354-BA5D028D8285}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9046DE00-EA58-4E4E-9354-BA5D028D8285}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9046DE00-EA58-4E4E-9354-BA5D028D8285}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9046DE00-EA58-4E4E-9354-BA5D028D8285}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF313151-C034-4CE6-B3B6-5190C5C55379}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF313151-C034-4CE6-B3B6-5190C5C55379}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF313151-C034-4CE6-B3B6-5190C5C55379}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF313151-C034-4CE6-B3B6-5190C5C55379}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F07A35C-CA56-42A1-B900-1CEA248FDD1E}
+	EndGlobalSection
+EndGlobal

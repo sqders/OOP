@@ -61,8 +61,14 @@ namespace WpfApp1
             // Buffer to hold a line read from the file on standard input
             string line;
             // Loop until the end of the file
+            bool FirstDebug = true;
             while ((line = Console.ReadLine()) != null)
             {
+                if (FirstDebug)
+                {
+                    line = line.Substring(3);
+                    FirstDebug = false;
+                }
                 // Format the data in the buffer
                 line = line.Replace(",", " y:");
                 line = "x:" + line + "\n";

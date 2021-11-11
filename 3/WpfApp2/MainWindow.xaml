@@ -1,0 +1,36 @@
+﻿<Window x:Class="GDC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GDC"
+        mc:Ignorable="d"
+        Title="Поиск НОД по методу Штейна и Евклида" Height="450" Width="400">
+    <Grid Background="#FF006C6C">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="7*"/>
+            <ColumnDefinition Width="33*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="firstInteger" HorizontalAlignment="Left" Margin="20,40,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22" FontSize="18" FontFamily="Candara" Grid.ColumnSpan="2" />
+        <TextBox x:Name="secondInteger"  HorizontalAlignment="Left" Margin="20,72,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22" FontSize="18" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="thirdInteger"  HorizontalAlignment="Left" Margin="20,104,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22" FontSize="18" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="fourthInteger" HorizontalAlignment="Left" Margin="20,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22" FontSize="18" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="fifthInteger" HorizontalAlignment="Left" Margin="20,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="150" Height="22" FontSize="18" FontFamily="Candara" Grid.ColumnSpan="2"/>
+        <Label Content="Входные значения :" HorizontalAlignment="Left" Margin="18,10,0,0" VerticalAlignment="Top" Width="150" Height="23" FontFamily="Consolas" FontSize="14" Grid.ColumnSpan="2"/>
+        <Button x:Name="findGCDParamsButton" Content="Найти НОД для нескольких" HorizontalAlignment="Left" Margin="110,40,0,0" VerticalAlignment="Top" Width="156" Height="22" Grid.Column="1" Click="findGCDParamsButton_Click"/>
+        <Button x:Name="findGCD2Button" Content="Найти НОД для 2" HorizontalAlignment="Left" Margin="110,72,0,0" VerticalAlignment="Top" Width="100" Height="22" Click="findGCD2Button_Click" Grid.Column="1"/>
+        <Button x:Name="findGCD3Button" Content="Найти НОД для 3" HorizontalAlignment="Left" Margin="110,104,0,0" VerticalAlignment="Top" Width="100" Height="22" Grid.Column="1" Click="findGCD3Button_Click"/>
+        <Button x:Name="findGCD4Button" Content="Найти НОД для 4" HorizontalAlignment="Left" Margin="110,134,0,0" VerticalAlignment="Top" Width="100" Height="22" Grid.Column="1" Click="findGCD4Button_Click"/>
+        <Button x:Name="findGCD5Button" Content="Найти НОД для 5" HorizontalAlignment="Left" Margin="110,168,0,0" VerticalAlignment="Top" Width="100" Height="22" Grid.Column="1" Click="findGCD5Button_Click"/>
+        <Grid Height="80" Margin="20,217,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FFA6C342" Width="150" Grid.ColumnSpan="2">
+            <Label Content="Результаты " Height="25" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14"/>
+            <Label x:Name="euclidResult" Content="Евклид :" Margin="0,27,0,0" VerticalAlignment="Top" Height="25" FontFamily="Consolas" FontSize="14"/>
+            <Label x:Name="steinResult" Content="Штейн :" Margin="0,54,0,0" VerticalAlignment="Top" Height="25" FontFamily="Consolas" FontSize="14"/>
+        </Grid>
+        <Grid x:Name="speed" Width="140" Height="80" Margin="110,217,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Background="#FF6262F9" Grid.Column="1">
+            <Label Content="Скорость " Height="25" VerticalAlignment="Top" FontFamily="Consolas" FontSize="14" />
+            <Label x:Name="euclidSpeed" Content="Евклид :" Margin="0,27,0,0" VerticalAlignment="Top" Height="25" FontFamily="Consolas" FontSize="14"/>
+            <Label x:Name="steinSpeed" Content="Штейн :" Margin="0,54,0,0" VerticalAlignment="Top" Height="25" FontFamily="Consolas" FontSize="14"/>
+        </Grid>
+    </Grid>
+</Window>

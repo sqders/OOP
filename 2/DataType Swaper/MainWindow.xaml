@@ -1,0 +1,43 @@
+﻿<Window x:Class="DataType_Swaper.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataType_Swaper"
+        mc:Ignorable="d"
+        Title="Type Swapper" Height="307.059" Width="800" ResizeMode="NoResize">
+    <Grid Height="279" VerticalAlignment="Top" Margin="0,0,0,-1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="278*"/>
+        </Grid.ColumnDefinitions>
+        <ComboBox x:Name="ComboBoxInput" HorizontalAlignment="Left" Height="49" Margin="8.947,31,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2" SelectedIndex="0" FontSize="28" >
+            <ListBoxItem Content="char"/>
+            <ListBoxItem Content="string"/>
+            <ListBoxItem Content="byte"/>
+            <ListBoxItem Content="int"/>
+            <ListBoxItem Content="float"/>
+            <ListBoxItem Content="double"/>
+            <ListBoxItem Content="decimal"/>
+            <ListBoxItem Content="bool"/>
+            <ListBoxItem Content="object"/>
+        </ComboBox>
+        <ComboBox x:Name="ComboBoxOutput" HorizontalAlignment="Left" Height="49" Margin="325.947,31,0,0" VerticalAlignment="Top" Width="220" Grid.Column="2" SelectedIndex="0" FontSize="28">
+            <ListBoxItem Content="char"/>
+            <ListBoxItem Content="string"/>
+            <ListBoxItem Content="byte"/>
+            <ListBoxItem Content="int"/>
+            <ListBoxItem Content="float"/>
+            <ListBoxItem Content="double"/>
+            <ListBoxItem Content="decimal"/>
+            <ListBoxItem Content="bool"/>
+            <ListBoxItem Content="object"/>
+        </ComboBox>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="49" Margin="10,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="213" FontSize="26" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="TextBlock1" HorizontalAlignment="Left" Height="127" Margin="10,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="772" FontSize="40" Grid.ColumnSpan="3" Text="Явное преобразование:&#xD;&#xA;Неявное преобразование:"/>
+        <Label Content="   -&gt;" HorizontalAlignment="Left" Height="49" Margin="233.947,31,0,0" VerticalAlignment="Top" Width="87" FontSize="30" Grid.Column="2"/>
+        <Button Content="Преобразовать" HorizontalAlignment="Left" Height="49" Margin="10,85,0,0" VerticalAlignment="Top" Width="772" Click="Button_Click" FontSize="24" Grid.ColumnSpan="3"/>
+
+    </Grid>
+</Window>
